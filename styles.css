@@ -1,0 +1,181 @@
+/* === Global Styles === */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  background-color: #f5f9fb;
+  color: #222;
+}
+
+/* === Layout === */
+
+header {
+  background-color: #1c567d;
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+nav {
+  background-color: #123d59;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 960px;
+  margin: 1.5rem auto;
+  padding: 0 1rem 2rem 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+main section + section {
+  margin-top: 1.5rem;
+}
+
+h2 {
+  color: #1c567d;
+  margin-bottom: 0.25rem;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+/* === Footer === */
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1c567d;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* === Tables (for stocking page) === */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.75rem;
+}
+
+th, td {
+  border: 1px solid #ccd9e0;
+  padding: 0.5rem;
+}
+
+th {
+  background-color: #e3f1f8;
+  text-align: left;
+}
+
+/* === Video === */
+
+.video-wrapper {
+  margin-top: 1rem;
+}
+
+video {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+/* === Forms (for contact page) === */
+
+form {
+  max-width: 480px;
+  margin-top: 1rem;
+}
+
+form div {
+  margin-bottom: 0.75rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccd9e0;
+  border-radius: 4px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #1c567d;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+/* === Responsive tweak === */
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  main {
+    margin: 1rem;
+  }
+}
