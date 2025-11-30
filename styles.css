@@ -98,14 +98,65 @@ ul, ol {
   display: block;
   width: 100%;
   border-radius: 6px;
-  max-height: 320px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 
 .page-visual figcaption {
   margin-top: 0.35rem;
   color: #3a5568;
   font-size: 0.95rem;
+}
+
+/* Contact page image sizing */
+.contact-visual {
+  max-width: 800px;
+  margin: 0 auto 1.25rem;
+}
+
+.contact-visual img {
+  max-height: 300px;
+}
+
+/* === Split layout for maintenance intro === */
+
+.split-block {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+  margin: 1rem 0 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-areas:
+    "weekly"
+    "image"
+    "monthly";
+}
+
+.split-block .split-weekly { grid-area: weekly; }
+.split-block .split-image { grid-area: image; }
+.split-block .split-monthly { grid-area: monthly; }
+
+.split-block .page-visual {
+  margin: 0;
+  max-width: 420px;
+  justify-self: start;
+}
+
+.split-block .split-content {
+  min-width: 0;
+}
+
+@media (min-width: 900px) {
+  .split-block {
+    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-areas:
+      "weekly image"
+      "monthly image";
+  }
+
+  .split-block .page-visual {
+    justify-self: end;
+  }
 }
 
 /* === Footer === */
