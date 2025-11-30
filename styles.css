@@ -18,7 +18,7 @@ body {
 header {
   background-color: #1c567d;
   color: #ffffff;
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem;
   text-align: center;
 }
 
@@ -28,7 +28,7 @@ header h1 {
 }
 
 .tagline {
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   font-size: 1rem;
 }
 
@@ -43,6 +43,8 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 nav a {
