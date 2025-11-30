@@ -144,7 +144,8 @@ th {
 /* === Video === */
 
 .video-wrapper {
-  margin-top: 1rem;
+  margin: 1rem auto 0;
+  max-width: 720px;
 }
 
 video {
